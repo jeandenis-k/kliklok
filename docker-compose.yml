@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    volumes:
+      - .:/app:cached
+    # command: bash -c "bundle install && bundle exec falcon serve -b http://0.0.0.0 --port 8000"
+    command: /bin/bash -c "while sleep 1000; do :; done"
