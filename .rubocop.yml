@@ -1,0 +1,15 @@
+# Documentation: https://docs.rubocop.org/rubocop/configuration.html
+
+AllCops:
+  TargetRubyVersion: 3.1
+  SuggestExtensions: false
+  NewCops: enable
+
+Bundler/OrderedGems:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/GlobalStdStream:
+  Enabled: false

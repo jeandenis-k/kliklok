@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "falcon", "~> 0.42.3"
+gem 'falcon', '~> 0.42.3'
 
-gem "ruby-lsp", "~> 0.3.7", :group => :development
+gem 'ruby-lsp', '~> 0.3.7', group: :development
 
 # copied from other backend
-gem "rack", "= 3.0.0"
+gem 'rack', '= 3.0.0'
 gem 'dry-monads', '1.6.0'
 gem 'dry-validation', '1.10.0'
 gem 'dry-schema', '1.13.0'
@@ -21,7 +21,6 @@ gem 'pry', '0.14.1'
 
 group :development do
   gem 'rubocop', '1.25.1'
-  gem 'rubocop-performance', '1.13.2'
 end
 
 group :test do
@@ -31,7 +30,7 @@ group :test do
 end
 
 group :development, :test do
-  gem 'byebug', '11.1.3'
-  gem 'stackprof'
+  gem 'byebug'
 end
 
+gem 'sus', '~> 0.16.0'
