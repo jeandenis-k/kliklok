@@ -28,7 +28,11 @@
   // "shutdownAction": "none",
 
   // Uncomment the next line to run commands after the container is created.
-  "postCreateCommand": "apk add nodejs npm openssh-client && npm install -g prettier @prettier/plugin-ruby && gem install syntax_tree syntax_tree-haml syntax_tree-rbs && bundle"
+  "postCreateCommand": "apk add nodejs npm openssh-client && npm install -g prettier @prettier/plugin-ruby && gem install syntax_tree syntax_tree-haml syntax_tree-rbs && bundle",
+
+  "settings": {
+    "prettier.prettierPath": "/usr/local/lib/node_modules/prettier/"
+  }
 
   // Configure tool-specific properties.
   // "customizations": {},
