@@ -12,10 +12,8 @@ TEST_RACK_APP =
     run app
   end
 
-module Sus
-  class Base
-    def mock_request
-      Rack::MockRequest.new(TEST_RACK_APP)
-    end
+class Sus::Base # rubocop:disable Style/ClassAndModuleChildren
+  def mock_request
+    Rack::MockRequest.new(TEST_RACK_APP)
   end
 end
