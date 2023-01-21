@@ -2,6 +2,7 @@
 
 require 'zeitwerk'
 require 'rack'
+require 'json'
 
 STDOUT.sync = true
 

@@ -4,7 +4,7 @@ require 'byebug'
 
 require_relative '../kliklok'
 
-Init.call => { app: }
+Init.call(realm_name: 'users', root_url: 'http://localhost:8000/') => { app: }
 
 TEST_RACK_APP =
   Rack::Builder.app do
