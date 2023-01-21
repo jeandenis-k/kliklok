@@ -13,3 +13,9 @@ Style/Documentation:
 
 Style/GlobalStdStream:
   Enabled: false
+
+Layout:
+  Enabled: false
+
+Metrics:
+  Enabled: false
